@@ -59,10 +59,11 @@ function ApproachOne({ onSubmit }: Props) {
           <label htmlFor="user">User Name</label>
           <Input
             borderColor={'black'}
-            name="username"
-            value={formik.values.username}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
+            // name="username"
+            // value={formik.values.username}
+            // onChange={formik.handleChange}
+            // onBlur={formik.handleBlur}
+            {...formik.getFieldProps("username")}
             id="user"
             placeholder="User Name"
           />
