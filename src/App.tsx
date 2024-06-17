@@ -7,7 +7,7 @@ import ApproachThree from './components/approaches/approach-three';
 import StepperForms from './components/stepper_forms';
 
 function App() {
-  const { activeStep, goToNext, goToPrevious } = useSteps({index: 1});
+  const { activeStep, goToNext, goToPrevious } = useSteps({ index: 1 });
 
   return (
     <Box w={'100%'} h={'100vh'} padding={'50px'} bg={'white'}>
@@ -16,14 +16,13 @@ function App() {
         width={'100%'}
         padding={'10px'}
         display={'flex'}
-        h={'70vh'}
         borderRadius={'10px'}
         justifyContent={'center'}
         alignItems={'center'}
       >
         <Box display={activeStep === 1 ? 'unset' : 'none'}>
           <Fade in={activeStep === 1}>
-            <ApproachOne onBack={goToPrevious} onSubmit={goToNext} />
+            <ApproachOne onSubmit={goToNext} />
           </Fade>
         </Box>
         <Box display={activeStep === 2 ? 'unset' : 'none'}>
