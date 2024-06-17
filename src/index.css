@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.hover-input:hover {
+  outline-color:  rgb(221, 221, 221)  ;
+  border-color: rgb(221, 221, 221);
+}
+
+.red {
+  color: red;
+}
